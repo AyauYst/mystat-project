@@ -16,21 +16,21 @@ class UsersSeeder extends Seeder
         DB::table('users')->insert([
             'name' => $faker->name,
             'email' => 'admin@gmail.com',
-            'password' => '123456',
+            'password' => Hash::make('123456'),
             'role_id' => 1
         ]);
 
         DB::table('users')->insert([
             'name' => $faker->name,
             'email' => 'student@gmail.com',
-            'password' => '123456',
+            'password' => Hash::make('123456'),
             'role_id' => 2
         ]);
 
         DB::table('users')->insert([
             'name' => $faker->name,
             'email' => 'teacher@gmail.com',
-            'password' => '123456',
+            'password' => Hash::make('123456'),
             'role_id' => 3
         ]);
     }

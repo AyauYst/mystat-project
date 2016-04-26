@@ -26,6 +26,6 @@ class CreateGroupStudentsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('groups_students');
     }
 }
